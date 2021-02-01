@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping">
+
+<hibernate-mapping>
+    <!-- Definición de mapeo de un bean (FQCN) con la tabla correspondiente en base de datos -->
+    <class name="es.albarregas.beans.Modulo" table="modulosM1an">
+        <id column="idModulo" name="idModulo">
+            <generator class="identity"/>
+        </id>
+        
+        <property name="denominacion">
+            <column name="denominacion" length="50" not-null="true"/>   
+        </property>
+       
+    </class>
+</hibernate-mapping>
